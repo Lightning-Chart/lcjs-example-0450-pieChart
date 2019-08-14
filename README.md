@@ -85,6 +85,6 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/classes/piechart.html
-[PieChartTypes]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#piecharttypes
-[SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.0/globals.html#slicelabelformatter
+[PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/classes/piechart.html
+[PieChartTypes]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#piecharttypes
+[SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.0.1/globals.html#slicelabelformatter

@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that shows the creation of a Pie Chart.
  */
 // Import LightningChartJS
@@ -14,7 +14,9 @@ const {
     ColorPalettes
 } = lcjs
 
-const pie = lightningChart().Pie({ type: PieChartTypes.LabelsOnSides })
+const pieType = window.innerWidth > 599 ? PieChartTypes.LabelsOnSides : PieChartTypes.LabelsInsideSlices
+
+const pie = lightningChart().Pie({ type: pieType })
     .setTitle('Project Time Division')
     .setAnimationsEnabled(true)
     .setMultipleSliceExplosion(true)

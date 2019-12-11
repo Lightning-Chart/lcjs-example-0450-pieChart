@@ -14,7 +14,8 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description
+
+## Description
 
 Pie Chart (or a Circular Chart) is a chart used to show statistical graphic. The Pie Chart is divided into slices, with each slice illustrating a numerical portion of the whole Pie. Each slice's size (usually depicted in the central angle and area of the slice) is proportional to its quantity.
 
@@ -58,14 +59,15 @@ pie.setLabelFormatter( SliceLabelFormatters.NamePlusRelativeValue )
 
 The lines connecting each slice to its label can be modified.
 
-### API links
 
-* Pie Chart: [PieChart][]
-* Pie Chart Types: [PieChartTypes][]
-* Pie Slice label formatter: [SliceLabelFormatter][]
+## API Links
+
+* Pie Chart: [PieChart]
+* Pie Chart Types: [PieChartTypes]
+* Pie Slice label formatter: [SliceLabelFormatter]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -77,14 +79,16 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/piechart.html
-[PieChartTypes]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#piecharttypes
-[SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#slicelabelformatter
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/piechart.html
+[PieChartTypes]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#piecharttypes
+[SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#slicelabelformatter
+

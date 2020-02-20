@@ -55,7 +55,8 @@ chart.setMultipleSliceExplosion( true )
 The labels for all slices can be formatted in different ways.
 
 ```javascript
-// Set the label formatting to show the slice's name and the relative value (size of the slice as percentage).
+// Set the label formatting to show the slice's name and the relative value
+// (size of the slice as percentage).
 pie.setLabelFormatter( SliceLabelFormatters.NamePlusRelativeValue )
 ```
 

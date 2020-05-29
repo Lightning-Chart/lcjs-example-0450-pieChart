@@ -11,7 +11,10 @@ const {
     LegendBoxBuilders,
     SliceLabelFormatters,
     SolidFillPalette,
-    ColorPalettes
+    ColorPalettes,
+    SolidFill,
+    SolidLine,
+    ColorRGBA
 } = lcjs
 
 const pieType = window.innerWidth > 599 ? PieChartTypes.LabelsOnSides : PieChartTypes.LabelsInsideSlices
@@ -49,7 +52,9 @@ const data = [
 const slices = data.map((item) => pie.addSlice(item.name, item.value))
 
 // Specify function which generates text for Slice Labels(LabelFormatter).
+
 pie.setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue)
+
 
 // ----- Add LegendBox -----
 pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
@@ -58,6 +63,11 @@ pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
     .setMargin({ bottom: 5, left: 5 })
     .add(pie)
 
-// ----- Create fullSpectrum Palette for Pie (defines color of Slice filling) ----
-const palette = SolidFillPalette(ColorPalettes.fullSpectrum, 5)
+// ----- Create custom Palette for Pie (defines color of Slice filling) ----
+const palette = SolidFillPalette(ColorPalettes.sector(180,320,0.7,0.7), 5)
+
+// --------- Create line around slices -----
+const customStrokeStyle = new SolidLine({ fillStyle: new SolidFill({ color: ColorRGBA(160, 160, 160) }), thickness: 2 })
+
 pie.setSliceFillStyle(palette)
+.setSliceStrokeStyle(customStrokeStyle)

@@ -65,9 +65,9 @@ The lines connecting each slice to its label can be modified.
 
 ## API Links
 
-* Pie Chart: [PieChart]
-* Pie Chart Types: [PieChartTypes]
-* Pie Slice label formatter: [SliceLabelFormatter]
+* [Pie Chart]
+* [Pie Chart Types]
+* [Pie Slice label formatter]
 
 
 ## Support
@@ -91,7 +91,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/piechart.html
-[PieChartTypes]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#piecharttypes
-[SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#slicelabelformatter
+[Pie Chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/piechart.html
+[Pie Chart Types]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#piecharttypes
+[Pie Slice label formatter]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#slicelabelformatter
 

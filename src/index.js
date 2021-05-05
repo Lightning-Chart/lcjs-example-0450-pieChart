@@ -62,16 +62,14 @@ pie.setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue)
 
 // ----- Add LegendBox -----
 pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
-    .setPosition({ x: 0, y: 0 })
-    .setOrigin({ x: -1, y: -1 })
-    .setMargin({ bottom: 5, left: 5 })
     .add(pie)
 
 // ----- Create custom Palette for Pie (defines color of Slice filling) ----
-const palette = SolidFillPalette(ColorPalettes.sector(180, 320, 0.7, 0.7), 5)
+// const palette = SolidFillPalette(ColorPalettes.sector(180, 320, 0.7, 0.7), 5)
 
 // --------- Create line around slices -----
 const customStrokeStyle = new SolidLine({ fillStyle: new SolidFill({ color: ColorRGBA(160, 160, 160) }), thickness: 2 })
 
-pie.setSliceFillStyle(palette)
-    .setSliceStrokeStyle(customStrokeStyle)
+pie
+//    .setSliceFillStyle(palette)
+   .setSliceStrokeStyle(customStrokeStyle)

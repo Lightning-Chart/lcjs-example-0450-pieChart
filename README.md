@@ -1,6 +1,6 @@
-# Pie Chart
+# JavaScript Pie Chart
 
-![Pie Chart](pieChart.png)
+![JavaScript Pie Chart](pieChart.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 

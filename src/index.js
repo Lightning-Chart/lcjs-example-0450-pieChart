@@ -10,18 +10,13 @@ const {
     PieChartTypes,
     LegendBoxBuilders,
     SliceLabelFormatters,
-    SolidFillPalette,
-    ColorPalettes,
-    SolidFill,
-    SolidLine,
-    ColorRGBA,
     Themes
 } = lcjs
 
 const pieType = window.innerWidth > 599 ? PieChartTypes.LabelsOnSides : PieChartTypes.LabelsInsideSlices
 
 const pie = lightningChart().Pie({
-    // theme: Themes.dark 
+    // theme: Themes.darkGold 
     type: pieType
 })
     .setTitle('Project Time Division')
@@ -62,14 +57,9 @@ pie.setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue)
 
 // ----- Add LegendBox -----
 pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
+    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
+    .setAutoDispose({
+        type: 'max-width',
+        maxWidth: 0.30,
+    })
     .add(pie)
-
-// ----- Create custom Palette for Pie (defines color of Slice filling) ----
-// const palette = SolidFillPalette(ColorPalettes.sector(180, 320, 0.7, 0.7), 5)
-
-// --------- Create line around slices -----
-const customStrokeStyle = new SolidLine({ fillStyle: new SolidFill({ color: ColorRGBA(160, 160, 160) }), thickness: 2 })
-
-pie
-//    .setSliceFillStyle(palette)
-   .setSliceStrokeStyle(customStrokeStyle)

@@ -1,6 +1,6 @@
 # JavaScript Pie Chart
 
-![JavaScript Pie Chart](pieChart.png)
+![JavaScript Pie Chart](pieChart-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -8,13 +8,13 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 
 The demo can be used as an example or a seed project. Local execution requires the following steps:
 
-- Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
-- Open the project folder in a terminal:
+-   Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed
+-   Open the project folder in a terminal:
 
-        npm install              # fetches dependencies
-        npm start                # builds an application and starts the development server
+          npm install              # fetches dependencies
+          npm start                # builds an application and starts the development server
 
-- The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
+-   The application is available at _http://localhost:8080_ in your browser, webpack-dev-server provides hot reload functionality.
 
 
 ## Description
@@ -33,7 +33,7 @@ By default, the LabelsOnSides type is used.
 
 ```javascript
 // Create a new Pie Chart and pass the type to use when placing labels.
-const chart = lightningChart().Pie( { type: PieChartTypes.LabelsOnSides } )
+const chart = lightningChart().Pie({ type: PieChartTypes.LabelsOnSides })
 ```
 
 After creating the Pie Chart, we can populate it by adding slices to it.
@@ -41,7 +41,7 @@ The slice should always get a name and value in a single object.
 
 ```javascript
 // Add a slice to populate the Pie.
-chart.addSlice( { name: 'Planning', value: 100 } )
+chart.addSlice({ name: 'Planning', value: 100 })
 ```
 
 Each slice can be 'exploded' by clicking on them, and 'imploded' by clicking on a exploded slice.
@@ -49,7 +49,7 @@ Exploding slices can be set to only one at a time, or allowing all slices to be 
 
 ```javascript
 // Allow multiple slices to be in exploded state at the same time.
-chart.setMultipleSliceExplosion( true )
+chart.setMultipleSliceExplosion(true)
 ```
 
 The labels for all slices can be formatted in different ways.
@@ -57,7 +57,7 @@ The labels for all slices can be formatted in different ways.
 ```javascript
 // Set the label formatting to show the slice's name and the relative value
 // (size of the slice as percentage).
-pie.setLabelFormatter( SliceLabelFormatters.NamePlusRelativeValue )
+pie.setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue)
 ```
 
 The lines connecting each slice to its label can be modified.
@@ -74,24 +74,24 @@ The lines connecting each slice to its label can be modified.
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
-Official [API documentation][1] can be found on [Arction][2] website.
+Official [API documentation][1] can be found on [LightningChart][2] website.
 
 If the docs and other materials do not solve your problem as well as implementation help is needed, ask on [StackOverflow][3] (tagged lightningchart).
 
-If you think you found a bug in the LightningChart JavaScript library, please contact support@arction.com.
+If you think you found a bug in the LightningChart JavaScript library, please contact support@lightningchart.com.
 
-Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
+Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@lightningchart.com.
 
 [0]: https://github.com/Arction/
-[1]: https://www.arction.com/lightningchart-js-api-documentation/
-[2]: https://www.arction.com
+[1]: https://lightningchart.com/lightningchart-js-api-documentation/
+[2]: https://lightningchart.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
-[4]: https://www.arction.com/support-services/
+[4]: https://lightningchart.com/support-services/
 
-© Arction Ltd 2009-2020. All rights reserved.
+© LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Pie Chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/piechart.html
-[Pie Chart Types]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#piecharttypes
-[Pie Slice label formatter]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#slicelabelformatter
+[Pie Chart]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/classes/PieChart.html
+[Pie Chart Types]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/variables/PieChartTypes-1.html
+[Pie Slice label formatter]: https://lightningchart.com/lightningchart-js-api-documentation/v4.0.0/types/SliceLabelFormatter.html
 

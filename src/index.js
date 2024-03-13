@@ -11,7 +11,7 @@ const pieType = window.innerWidth > 599 ? PieChartTypes.LabelsOnSides : PieChart
 
 const pie = lightningChart()
     .Pie({
-        // theme: Themes.darkGold
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
         type: pieType,
     })
     .setTitle('Project Time Division')

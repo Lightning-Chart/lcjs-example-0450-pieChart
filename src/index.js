@@ -2,7 +2,7 @@
  * LightningChartJS example that shows the creation of a Pie Chart.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, PieChartTypes, LegendBoxBuilders, SliceLabelFormatters, Themes } = lcjs

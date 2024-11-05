@@ -91,7 +91,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Pie Chart]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/PieChart.html
-[Pie Chart Types]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/variables/PieChartTypes-1.html
-[Pie Slice label formatter]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/types/SliceLabelFormatter.html
+[Pie Chart]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/PieChart.html
+[Pie Chart Types]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/variables/PieChartTypes-1.html
+[Pie Slice label formatter]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/types/SliceLabelFormatter.html
 

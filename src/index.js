@@ -5,7 +5,7 @@
 const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, PieChartTypes, LegendBoxBuilders, SliceLabelFormatters, Themes } = lcjs
+const { lightningChart, PieChartTypes, SliceLabelFormatters, Themes } = lcjs
 
 const pieType = window.innerWidth > 599 ? PieChartTypes.LabelsOnSides : PieChartTypes.LabelsInsideSlices
 
@@ -49,12 +49,3 @@ const slices = data.map((item) => pie.addSlice(item.name, item.value))
 // Specify function which generates text for Slice Labels(LabelFormatter).
 
 pie.setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue)
-
-// ----- Add LegendBox -----
-pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.3,
-    })
-    .add(pie)

@@ -8,18 +8,16 @@ const lcjs = require('@lightningchart/lcjs')
 // Extract required parts from LightningChartJS.
 const { lightningChart, PieChartTypes, SliceLabelFormatters, Themes } = lcjs
 
-const pieType = window.innerWidth > 599 ? PieChartTypes.LabelsOnSides : PieChartTypes.LabelsInsideSlices
-
 const pie = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         })
     .Pie({
+        type: PieChartTypes.LabelsInsideSlices,
         theme: (() => {
     const t = Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
     return t && window.lcjsSmallView ? lcjs.scaleTheme(t, 0.5) : t
 })(),
 textRenderer: window.lcjsSmallView ? lcjs.htmlTextRenderer : undefined,
-        type: pieType,
     })
     .setTitle('Project Time Division')
     .setMultipleSliceExplosion(true)
